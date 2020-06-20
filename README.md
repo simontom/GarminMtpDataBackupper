@@ -13,10 +13,19 @@ Update config.json
 }
 ```
 
+
 **garminDeviceName**
+
+![garminDeviceName](images/garminDeviceName.png?raw=true "garminDeviceName")
 
 **garminDiskName**
 
+![garminDiskName](images/garminDiskName.png?raw=true "garminDiskName")
+
 **garminRoot**
 
+![garminRoot](images/garminRoot.png?raw=true "garminRoot")
+
 **garminFolders**
+
+![garminFolders](images/garminFolders.png?raw=true "garminFolders")
