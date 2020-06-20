@@ -16,16 +16,16 @@ Update config.json
 
 **garminDeviceName**
 
-![garminDeviceName](images/garminDeviceName.png?raw=true "garminDeviceName")
+![garminDeviceName](images/garminDeviceName.png)
 
 **garminDiskName**
 
-![garminDiskName](images/garminDiskName.png?raw=true "garminDiskName")
+![garminDiskName](images/garminDiskName.png)
 
 **garminRoot**
 
-![garminRoot](images/garminRoot.png?raw=true "garminRoot")
+![garminRoot](images/garminRoot.png)
 
 **garminFolders**
 
-![garminFolders](images/garminFolders.png?raw=true "garminFolders")
+![garminFolders](images/garminFolders.png)
