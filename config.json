@@ -1,0 +1,25 @@
+{
+	"garminDiskName": "Primary",
+	"garminDeviceName": "fenix 6 Sapphire",
+	"garminRoot": "GARMIN",
+	"garminFolders": [
+		"Activity",
+		"Apps",
+		"Clubs",
+		"Courses",
+		"Goals",
+		"Location",
+		"Metrics",
+		"MltSport",
+		"Monitor",
+		"Records",
+		"Schedule",
+		"Settings",
+		"Sleep",
+		"Sports",
+		"Text",
+		"Totals",
+		"xxx"
+	],
+	"targetPath": "D:\\CloudStation\\Garmin"
+}
