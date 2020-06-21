@@ -17,16 +17,16 @@ Example:
 
 **garminDeviceName**
 
-![garminDeviceName](images/garminDeviceName.png)
+![](images/garminDeviceName.png)
 
 **garminDiskName**
 
-![garminDiskName](images/garminDiskName.png)
+![](images/garminDiskName.png)
 
 **garminRoot**
 
-![garminRoot](images/garminRoot.png)
+![](images/garminRoot.png)
 
 **garminFolders**
 
-![garminFolders](images/garminFolders.png)
+![](images/garminFolders.png)
