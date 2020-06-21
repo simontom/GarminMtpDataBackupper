@@ -1,5 +1,8 @@
-Update config.json
-Example:
+# Garmin Mtp Device Data Backupper
+Enables users to backup data from the device quickly.
+
+### Update config.json
+Config example:
 ```
 {
 	"garminDiskName": "Primary",
@@ -14,19 +17,23 @@ Example:
 }
 ```
 
-
-**garminDeviceName**
+Where to get **garminDeviceName** value
 
 ![](images/garminDeviceName.png)
 
-**garminDiskName**
+Where to get **garminDiskName** value
 
 ![](images/garminDiskName.png)
 
-**garminRoot**
+Where to get **garminRoot** value
 
 ![](images/garminRoot.png)
 
-**garminFolders**
+Where to get **garminFolders** value
 
 ![](images/garminFolders.png)
+
+
+### Output example
+
+![](images/consoleOutputExample.png)
