@@ -27,7 +27,9 @@ namespace GarminMtpDataBackupper
 
             if (_connectedDevice == null)
             {
-                throw new IOException($"Unable to connect to Garmin device: {_deviceName}");
+                var exception = new IOException($"Unable to connect to Garmin device: {_deviceName}");
+                Logger.Error("Connecting to the device problem.", exception);
+                throw exception;
             }
 
             _connectedDevice.Connect();
