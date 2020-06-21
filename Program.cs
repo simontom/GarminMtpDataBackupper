@@ -1,5 +1,6 @@
 ﻿using GarminMtpDataBackupper.Config;
 using System;
+using System.Reflection;
 
 namespace GarminMtpDataBackupper
 {
@@ -7,6 +8,10 @@ namespace GarminMtpDataBackupper
     {
         static void Main(string[] _)
         {
+            Console.WriteLine($"GarminMtpDataBackupper version: {typeof(Program).Assembly.GetName().Version}");
+            Console.WriteLine("Press Enter to start.");
+            Console.ReadLine();
+
             var configReader = new ConfigReader();
             var config = configReader.GetConfig();
 
@@ -15,7 +20,7 @@ namespace GarminMtpDataBackupper
             var dataBackuper = new DataBackupper(config, device);
             dataBackuper.BackupGarminData();
 
-            Console.WriteLine("\nPlease, press Enter to finish.");
+            Console.WriteLine("\nPress Enter to finish.");
             Console.ReadLine();
         }
     }
