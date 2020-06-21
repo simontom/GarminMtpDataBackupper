@@ -1,4 +1,5 @@
 Update config.json
+Example:
 ```
 {
 	"garminDiskName": "Primary",
