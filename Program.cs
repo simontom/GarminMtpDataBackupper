@@ -15,7 +15,7 @@ namespace GarminMtpDataBackupper
             var dataBackuper = new DataBackupper(config, device);
             dataBackuper.BackupGarminData();
 
-            Console.WriteLine("Please, press Enter to finish.");
+            Console.WriteLine("\nPlease, press Enter to finish.");
             Console.ReadLine();
         }
     }
