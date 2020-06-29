@@ -13,10 +13,16 @@ namespace GarminMtpDataBackupper
         private string FormattedCurrentDate => DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss");
         private string DestinationRootFolderPath => Path.Combine(_config.TargetPath, $"{_config.GarminDeviceName}_{FormattedCurrentDate}");
 
+        private int _directoriesCount;
+        private int _filesCount;
+
         public DataBackupper(Config.Config config, Device device)
         {
             _config = config;
             _device = device;
+
+            _directoriesCount = 0;
+            _filesCount = 0;
         }
 
         public void BackupGarminData()
@@ -39,6 +45,8 @@ namespace GarminMtpDataBackupper
 
                 _device.Disconnect();
             }
+
+            PrintCopiesCount();
         }
 
         private void CopyDirectoryRecursively(string sourcePath, string destinationPath)
@@ -70,6 +78,7 @@ namespace GarminMtpDataBackupper
             {
                 string temppath = Path.Combine(destinationPath, file.Name);
                 file.CopyTo(temppath, false);
+                _filesCount++;
             }
 
             var folders = sourceDirectoryInfo.EnumerateDirectories();
@@ -78,7 +87,13 @@ namespace GarminMtpDataBackupper
                 string temppath = Path.Combine(destinationPath, subdir.Name);
                 Logger.Warning($@"Copying SUBfolder FROM: {sourcePath} TO: {destinationPath}");
                 CopyDirectoryRecursively(subdir.FullName, temppath);
+                _directoriesCount++;
             }
+        }
+
+        private void PrintCopiesCount()
+        {
+            Logger.Info($"Copied\n\t- Directories: {_directoriesCount}\n\t- Files: {_filesCount}");
         }
     }
 }
